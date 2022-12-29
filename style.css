@@ -31,29 +31,29 @@ body {
   flex-direction: row;
   width: 520px;
   height: 400px;
-  border-radius: 10px;
+  border-radius: 0.6rem;
 }
 .product-image {
   height: 400px;
   width: 250px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-top-left-radius: 0.6rem;
+  border-bottom-left-radius: 0.6rem;
 }
 .product-information {
   background-color: var(--white);
-  margin: 20px;
+  margin: 1.25rem;
 }
 .product-type {
-  letter-spacing: 3px;
+  letter-spacing: 0.2rem;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 0.9rem;
   color: var(--text-darkgrayishblue);
 }
 .product-name {
   text-transform: capitalize;
-  font-size: 32px;
-  margin-top: 16px;
-  margin-bottom: 20px;
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1.25rem;
   font-weight: 700;
   font-family: var(--sub-ff);
   color: var(--text-darkblue);
@@ -61,40 +61,43 @@ body {
 .product-description {
   color: rgb(176, 176, 178);
   letter-spacing: 1px;
-  font-size: 12px;
+  font-size: 0.75rem;
   color: var(--text-darkgrayishblue);
 }
 .new-price {
-  font-size: 30px;
+  font-size: 1.9rem;
   font-weight: bold;
-  margin-top: 20px;
+  margin-top: 1.25rem;
   color: var(--text-darkcyan);
   font-family: var(--sub-ff);
 }
 .old-price {
-  text-decoration: line-through;
-  font-size: 10px;
+  font-size: 0.6rem;
   color: var(--text-darkgrayishblue);
 }
 .cart-btn {
   background-color: var(--text-darkcyan);
-  font-size: 14px;
-  padding: 10px;
+  font-size: 0.9rem;
+  padding: 0.6rem;
   width: 200px;
   height: 40px;
-  border-radius: 10px;
-  border: 0px;
+  border-radius: 0.6rem;
+  border: 0;
   color: var(--white);
-  margin-top: 20px;
+  margin-top: 1.25rem;
   text-align: center;
+  cursor: pointer;
 }
 .cart-icon {
   color: var(--white);
-  margin-right: 10px;
+  margin-right: 0.6rem;
+}
+.cart-btn:hover {
+  background-color: hsl(187, 64%, 48%);
 }
 
 /* Responsive for Mobile devices */
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   .product-card {
     display: flex;
     flex-direction: column;
@@ -104,20 +107,20 @@ body {
   .product-image {
     height: 250px;
     width: 300px;
-    border-bottom-left-radius: 0px;
-    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0.6rem;
   }
   .product-description {
-    font-size: 14px;
+    font-size: 0.9rem;
   }
   .new-price {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
   .old-price {
-    font-size: 16px;
+    font-size: 1rem;
   }
   .cart-btn {
     width: 250px;
-    font-size: 14px;
+    font-size: 0.9rem;
   }
 }
